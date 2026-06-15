@@ -1,118 +1,224 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tafath Chabana Portfolio</title>
+<title>Tafath Chabana | Portfolio</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<script src="script.js" defer></script>
+
 </head>
 
 <body>
 
-<header>
-<h1 id="name">Tafath Chabana</h1>
-<button onclick="toggleLanguage()">FR / EN</button>
-</header>
+<nav>
 
-<section>
-<h2 id="title">Master 1 en Génie Logiciel</h2>
-<p id="intro">
-Bienvenue sur mon portfolio. Je suis étudiant en Master 1 en Génie Logiciel et passionné par le développement logiciel et les nouvelles technologies.
-</p>
-</section>
+<div class="logo">
+Tafath
+</div>
 
-<section>
-<h2 id="aboutTitle">À propos</h2>
-<p id="aboutText">
-Je développe des applications et j'améliore continuellement mes compétences en programmation et en ingénierie logicielle.
-</p>
-</section>
+<ul>
 
-<section>
-<h2 id="skillsTitle">Compétences</h2>
-<ul id="skills">
-<li>Java</li>
-<li>Python</li>
-<li>C/C++</li>
-<li>SQL</li>
-<li>HTML/CSS</li>
-<li>JavaScript</li>
-<li>Git & GitHub</li>
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
 </ul>
-</section>
 
-<section>
-<h2 id="projectsTitle">Projets</h2>
-<p id="projectsText">
-Projets universitaires et personnels en développement logiciel.
+</nav>
+
+<section id="home" class="hero">
+
+<div class="hero-text">
+
+<h1>
+
+Hi, I'm
+
+<span>Tafath Chabana</span>
+
+</h1>
+
+<h2>
+
+Software Engineer
+
+</h2>
+
+<p>
+
+Master 1 Software Engineering
+
+University of Bejaia
+
 </p>
+
+<div class="buttons">
+
+<a href="#projects">
+
+My Projects
+
+</a>
+
+<a href="#contact">
+
+Contact Me
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://avatars.githubusercontent.com/u/9919?s=280&v=4">
+
+</div>
+
 </section>
 
-<section>
-<h2 id="contactTitle">Contact</h2>
-<p>Email : your.email@example.com</p>
-<p>GitHub : https://github.com/tafath-ch</p>
+<section id="about">
+
+<h2>
+
+About Me
+
+</h2>
+
+<p>
+
+I am a Master's student in Software Engineering at the University of Bejaia. I enjoy building software, learning new technologies, and solving real-world problems.
+
+</p>
+
 </section>
 
-<script>
-let french=true;
+<section id="skills">
 
-function toggleLanguage(){
+<h2>
 
-french=!french;
+Skills
 
-if(french){
+</h2>
 
-document.documentElement.lang="fr";
+<div class="cards">
 
-document.getElementById("title").innerHTML="Master 1 en Génie Logiciel";
+<div>Python</div>
 
-document.getElementById("intro").innerHTML=
-"Bienvenue sur mon portfolio. Je suis étudiant en Master 1 en Génie Logiciel et passionné par le développement logiciel et les nouvelles technologies.";
+<div>Java</div>
 
-document.getElementById("aboutTitle").innerHTML="À propos";
+<div>C++</div>
 
-document.getElementById("aboutText").innerHTML=
-"Je développe des applications et j'améliore continuellement mes compétences en programmation et en ingénierie logicielle.";
+<div>SQL</div>
 
-document.getElementById("skillsTitle").innerHTML="Compétences";
+<div>HTML</div>
 
-document.getElementById("projectsTitle").innerHTML="Projets";
+<div>CSS</div>
 
-document.getElementById("projectsText").innerHTML=
-"Projets universitaires et personnels en développement logiciel.";
+<div>JavaScript</div>
 
-document.getElementById("contactTitle").innerHTML="Contact";
+<div>Git</div>
 
-}
+</div>
 
-else{
+</section>
 
-document.documentElement.lang="en";
+<section id="projects">
 
-document.getElementById("title").innerHTML="Master 1 in Software Engineering";
+<h2>
 
-document.getElementById("intro").innerHTML=
-"Welcome to my portfolio. I am a Master's student in Software Engineering with a passion for software development and emerging technologies.";
+Projects
 
-document.getElementById("aboutTitle").innerHTML="About";
+</h2>
 
-document.getElementById("aboutText").innerHTML=
-"I develop applications and continuously improve my programming and software engineering skills.";
+<div class="cards">
 
-document.getElementById("skillsTitle").innerHTML="Skills";
+<div>
 
-document.getElementById("projectsTitle").innerHTML="Projects";
+Project 1
 
-document.getElementById("projectsText").innerHTML=
-"University and personal software development projects.";
+<br><br>
 
-document.getElementById("contactTitle").innerHTML="Contact";
+Coming Soon
 
-}
+</div>
 
-}
-</script>
+<div>
+
+Project 2
+
+<br><br>
+
+Coming Soon
+
+</div>
+
+<div>
+
+Project 3
+
+<br><br>
+
+Coming Soon
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>
+
+Contact
+
+</h2>
+
+<p>
+
+Email:
+
+chabanatafath@gmail.com
+
+</p>
+
+<p>
+
+LinkedIn:
+
+tafath-chabana
+
+</p>
+
+<p>
+
+GitHub:
+
+tafath-ch
+
+</p>
+
+</section>
+
+<footer>
+
+© 2025 Tafath Chabana
+
+</footer>
 
 </body>
 </html>
