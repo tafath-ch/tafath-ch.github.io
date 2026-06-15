@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tafath Chabana Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1 id="name">Tafath Chabana</h1>
+<button onclick="toggleLanguage()">FR / EN</button>
+</header>
+
+<section>
+<h2 id="title">Master 1 en Génie Logiciel</h2>
+<p id="intro">
+Bienvenue sur mon portfolio. Je suis étudiant en Master 1 en Génie Logiciel et passionné par le développement logiciel et les nouvelles technologies.
+</p>
+</section>
+
+<section>
+<h2 id="aboutTitle">À propos</h2>
+<p id="aboutText">
+Je développe des applications et j'améliore continuellement mes compétences en programmation et en ingénierie logicielle.
+</p>
+</section>
+
+<section>
+<h2 id="skillsTitle">Compétences</h2>
+<ul id="skills">
+<li>Java</li>
+<li>Python</li>
+<li>C/C++</li>
+<li>SQL</li>
+<li>HTML/CSS</li>
+<li>JavaScript</li>
+<li>Git & GitHub</li>
+</ul>
+</section>
+
+<section>
+<h2 id="projectsTitle">Projets</h2>
+<p id="projectsText">
+Projets universitaires et personnels en développement logiciel.
+</p>
+</section>
+
+<section>
+<h2 id="contactTitle">Contact</h2>
+<p>Email : your.email@example.com</p>
+<p>GitHub : https://github.com/tafath-ch</p>
+</section>
+
+<script>
+let french=true;
+
+function toggleLanguage(){
+
+french=!french;
+
+if(french){
+
+document.documentElement.lang="fr";
+
+document.getElementById("title").innerHTML="Master 1 en Génie Logiciel";
+
+document.getElementById("intro").innerHTML=
+"Bienvenue sur mon portfolio. Je suis étudiant en Master 1 en Génie Logiciel et passionné par le développement logiciel et les nouvelles technologies.";
+
+document.getElementById("aboutTitle").innerHTML="À propos";
+
+document.getElementById("aboutText").innerHTML=
+"Je développe des applications et j'améliore continuellement mes compétences en programmation et en ingénierie logicielle.";
+
+document.getElementById("skillsTitle").innerHTML="Compétences";
+
+document.getElementById("projectsTitle").innerHTML="Projets";
+
+document.getElementById("projectsText").innerHTML=
+"Projets universitaires et personnels en développement logiciel.";
+
+document.getElementById("contactTitle").innerHTML="Contact";
+
+}
+
+else{
+
+document.documentElement.lang="en";
+
+document.getElementById("title").innerHTML="Master 1 in Software Engineering";
+
+document.getElementById("intro").innerHTML=
+"Welcome to my portfolio. I am a Master's student in Software Engineering with a passion for software development and emerging technologies.";
+
+document.getElementById("aboutTitle").innerHTML="About";
+
+document.getElementById("aboutText").innerHTML=
+"I develop applications and continuously improve my programming and software engineering skills.";
+
+document.getElementById("skillsTitle").innerHTML="Skills";
+
+document.getElementById("projectsTitle").innerHTML="Projects";
+
+document.getElementById("projectsText").innerHTML=
+"University and personal software development projects.";
+
+document.getElementById("contactTitle").innerHTML="Contact";
+
+}
+
+}
+</script>
+
+</body>
+</html>
